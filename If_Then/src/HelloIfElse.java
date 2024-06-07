@@ -21,6 +21,19 @@ public class HelloIfElse {
         if ((topScore > 90) || (secondTopScore <= 90)) {
             System.out.println("Either or both of the conditions are true");
         }
+
+        int newValue = 50;
+        if(newValue == 50){
+            System.out.println("this is true");
+        }
+
+        boolean isCar = false;
+        // if(isCar == true){
+        //     System.out.println("this isn't suppose to happen");
+        // }
+        if(!isCar){
+            System.out.println("this isn't suppose to happen");  //using ! is the not operator it is asking if the case is the opposite here
+        }
     }
 
 }
