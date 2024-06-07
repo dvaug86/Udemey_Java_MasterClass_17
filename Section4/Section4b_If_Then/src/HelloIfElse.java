@@ -34,6 +34,22 @@ public class HelloIfElse {
         if(!isCar){
             System.out.println("this isn't suppose to happen");  //using ! is the not operator it is asking if the case is the opposite here
         }
+
+        //ternery operators
+        String makeOfCar = "Volkswagen";
+        boolean isDomestic = makeOfCar == "Volkswagen" ? false : true;
+        if(isDomestic){
+            System.out.println("This is a domestic car");
+        }
+
+        String s = (isDomestic) ? "This car is domestic" : "This car is not domestic";
+        System.out.println(s);
+
+        int ageOfClient = 20;
+        String ageText = (ageOfClient >= 18 )? "over 18" : "still a kid";
+        System.out.println("our client is " + ageText );
+
+
     }
 
 }
