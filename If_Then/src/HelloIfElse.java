@@ -7,6 +7,16 @@ public class HelloIfElse {
             System.out.println("He is not an alien");
             System.out.println("And I am scared of aliens");
         }
+
+        int topScore = 80;
+        if(topScore >= 100){
+            System.out.println("You got the High score!");
+        }
+
+        int secondTopScore = 60;
+        if(topScore> secondTopScore && secondTopScore < 100){
+            System.out.println("Greater than second top score and less than 100 ");
+        }
     }
 
 }
