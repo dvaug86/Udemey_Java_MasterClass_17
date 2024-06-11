@@ -49,15 +49,27 @@ public class sec45_MethodsInJava {
         int levelCompleted = 5;
         int bonus = 100;
 
-calculateScore(true, 800, levelCompleted, bonus); //should delete the variables above and enter the values here to simplify code, just want to show this as an example 
+int highScore = calculateScore(gameOver, score, levelCompleted, bonus); //should delete the variables above and enter the values here to simplify code, just want to show this as an example 
+System.out.println("The HighScore is " + highScore);
+
 calculateScore(true, 10000, 8, 200);
     }
-public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
     int finalScore = score;
     if (gameOver) {
         finalScore += (levelCompleted * bonus);
         finalScore +=1000;
-        System.out.println("Your final Score was " + finalScore);
+        
     }
+    return finalScore;
 }
+
+//method structure with parameters and return type
+public static int calcMyAge(int dateOfBirth){
+    return (2024 - dateOfBirth);
+}
+int myAgeIs = calcMyAge(1986);
+
+
+
 }
