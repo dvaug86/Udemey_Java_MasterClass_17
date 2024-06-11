@@ -69,7 +69,6 @@ public static int calcMyAge(int dateOfBirth){
     return (2024 - dateOfBirth);
 }
 int myAgeIs = calcMyAge(1986);
-
-
+System.out.println()
 
 }
