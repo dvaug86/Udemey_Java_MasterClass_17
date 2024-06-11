@@ -41,34 +41,50 @@
 
 /////cleaning the code up above down below
 
-public class sec45_MethodsInJava {
-    public static void main(String[] args) {
 
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
+/////////////////////////////////////////////////////////////////////////////////////////
+// public class sec45_MethodsInJava {
+//     public static void main(String[] args) {
 
-int highScore = calculateScore(gameOver, score, levelCompleted, bonus); //should delete the variables above and enter the values here to simplify code, just want to show this as an example 
-System.out.println("The HighScore is " + highScore);
+//         boolean gameOver = true;
+//         int score = 800;
+//         int levelCompleted = 5;
+//         int bonus = 100;
 
-calculateScore(true, 10000, 8, 200);
-    }
-public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
-    int finalScore = score;
-    if (gameOver) {
-        finalScore += (levelCompleted * bonus);
-        finalScore +=1000;
+// int highScore = calculateScore(gameOver, score, levelCompleted, bonus); //should delete the variables above and enter the values here to simplify code, just want to show this as an example 
+// System.out.println("The HighScore is " + highScore);
+
+// calculateScore(true, 10000, 8, 200);
+//     }
+// public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
+//     int finalScore = score;
+//     if (gameOver) {
+//         finalScore += (levelCompleted * bonus);
+//         finalScore +=1000;
         
-    }
-    return finalScore;
-}
+//     }
+//     return finalScore;
+// }
+/////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 //method structure with parameters and return type
+
+//I figured out my error. I had put another method within the main method. That method should have been out side of the public static void main's curly brackets
+
+public class sec45_MethodsInJava {
+    public static void main(String[] args) {
+int dOB= 1986;
+int myAgeIs = calcMyAge(dOB);
+System.out.println("My age is " + myAgeIs);
+    }
+    
+
 public static int calcMyAge(int dateOfBirth){
-    return (2024 - dateOfBirth);
+    int myAge = (2024 - dateOfBirth);
+    return myAge;
 }
-int myAgeIs = calcMyAge(1986);
-System.out.println()
 
 }
+
+
