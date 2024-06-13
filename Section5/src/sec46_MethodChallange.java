@@ -23,20 +23,23 @@ public class sec46_MethodChallange {
 
     public static void displayHighScorePosition(String playerName, int playerPosition) {
 
-        System.out.println(playerName + " managed to get into position " + playerPosition + "on the highscore list");
+        System.out.println(playerName + " managed to get into position " + playerPosition + " on the highscore list");
 
     }
 
     public static int calculateHighScorePosition(int playerScore) {
-
+int position = 4
         if (playerScore > 1000) {
-            return 1;
-        } else if (playerScore >= 500 && playerScore < 1000) {
-            return 2;
-        } else if (playerScore >= 100 && playerScore < 500) {
-            return 3;
-        } else {
-            return 4;
+            position= 1;
+        } else if (playerScore >= 500) { // original line: } else if (playerScore >= 500 && playerScore < 1000) {
+                                         // ///this statement and the other else if don't need the 2 &&'s because it
+                                         // will be covered by the previous conditon.
+            position= 2;
+        } else if (playerScore >= 100) { // oringinal line: } else if (playerScore >= 100 && playerScore < 500) {
+            position = 3;
         }
+        return position;// original line: } else { //// we don't need the else it is redundant else 4
+                 // works just the same
+
     }
 }
