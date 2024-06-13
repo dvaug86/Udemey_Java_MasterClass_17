@@ -17,26 +17,26 @@
 
 public class sec46_MethodChallange {
     public static void main(String[] args) {
-
+        int highScorePosition = calculateHighScorePosition(1500);
+        displayHighScorePosition("Tim", highScorePosition);
     }
 
     public static void displayHighScorePosition(String playerName, int playerPosition) {
-        playerPosition =  scorePosition;
-        calculateHighScore(scorePosition)
+
         System.out.println(playerName + " managed to get into position " + playerPosition + "on the highscore list");
+
     }
 
-    public static int calculateHighScore(int scorePosition) {
-        int position;
-        if (scorePosition > 1000) {
-            position = 1;
-        } else if (scorePosition >= 500 && scorePosition < 1000) {
-            position = 2;
-        } else if (scorePosition >= 100 && scorePosition < 500) {
-            position = 3;
+    public static int calculateHighScorePosition(int playerScore) {
+
+        if (playerScore > 1000) {
+            return 1;
+        } else if (playerScore >= 500 && playerScore < 1000) {
+            return 2;
+        } else if (playerScore >= 100 && playerScore < 500) {
+            return 3;
         } else {
-            position = 4;
+            return 4;
         }
-        return position;
     }
 }
