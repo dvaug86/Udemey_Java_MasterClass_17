@@ -8,5 +8,7 @@ Otherwise, if it is positive, calculate the value of miles per hour, round it an
  */
 
 public class CodingExercise2_SpeedConverter {
-    public static int toMilesPerHour(double kilometersPerHour)
+    public static int toMilesPerHour(double kilometersPerHour){
+        long kPHToMPH = (Math.round(1.609*kilometersPerHour));
+    }
 }
