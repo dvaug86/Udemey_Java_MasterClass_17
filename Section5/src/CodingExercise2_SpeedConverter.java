@@ -8,7 +8,28 @@ Otherwise, if it is positive, calculate the value of miles per hour, round it an
  */
 
 public class CodingExercise2_SpeedConverter {
-    public static int toMilesPerHour(double kilometersPerHour){
-        long kPHToMPH = (Math.round(1.609*kilometersPerHour));
+
+    public static long toMilesPerHour(double kilometersPerHour){
+
+        if (kilometersPerHour <0) {
+            return -1;
+        }
+
+        return Math.round(kilometersPerHour/1.609);
+
     }
+
+    public static void printConversion (double kilometersPerHour) {
+
+        if (kilometersPerHour <0) {
+            System.out.println("Invalid Value");
+        } else {
+            long mPH = toMilesPerHour(kilometersPerHour);
+            System.out.println(kilometersPerHour + " km/h = " + mPH + " mi/h");
+        }
+
+    }
+
 }
+    
+
