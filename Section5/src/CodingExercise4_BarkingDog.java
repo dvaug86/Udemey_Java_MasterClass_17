@@ -27,6 +27,7 @@ public class CodingExercise4_BarkingDog {
     // }
 }
 
+//i t
 //close
 //   if ((hourOfDay < 0) || (hourOfDay > 23)) {
 //     return false;
