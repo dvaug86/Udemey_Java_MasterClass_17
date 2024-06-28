@@ -29,23 +29,67 @@ If it's divisible by 100, it has to be divisible by 400.
 
 public class CodingExercise5_LeapYearCalc {
     public static void main(String[] args) {
-isLeapYear((1944));
+        isLeapYear((1944));
     }
 
-    public static boolean isLeapYear(int year){
-        if(year <0 || year <9999){
-            System.out.println("fail test 1");
+    // test 1
+    // public static boolean isLeapYear(int year){
+    // if(year <0 || year <9999){
+    // System.out.println("fail test 1");
+    // return false;
+    // }if(year % 4 !=0 ){
+    // System.out.println("fail test 2");
+    // return false;
+    // }if(year % 100 != 0){
+    // System.out.println("fail test 3");
+    // return false;
+    // }if (year % 400 !=400){
+    // System.out.println("fail test 4");
+    // return false;
+    // }else return true;
+
+    // }
+
+    // test 2 something is wrong with my logic
+    // public static boolean isLeapYear(int year) {
+    // if (year < 1 || year > 9999) {
+    // return false;
+    // }
+    // if (year % 4 == 0) {
+
+    // }
+    // if (year % 100 != 0) {
+
+    // }
+    // if (year % 400 == 0) {
+    // return true;
+
+    // } else
+    // return false;
+
+    // }
+
+    // try 3 //i should have done better
+    public static boolean isLeapYear(int year) {
+        if (year < 1 || year > 9999) {
             return false;
-        }if(year % 4 !=0 ){
-            System.out.println("fail test 2");
+        }
+
+        if (year % 4 == 0) {
+
+            if (year % 100 != 0) {
+                return true;
+            } else {
+                if (year % 400 == 0) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        } else {
             return false;
-        }if(year % 100 != 0){
-            System.out.println("fail test 3");
-            return false;
-        }if (year % 400 !=400){
-            System.out.println("fail test 4");
-            return false;
-        }else return true;
-        
+        }
+
     }
 }
