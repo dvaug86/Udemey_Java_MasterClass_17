@@ -40,7 +40,7 @@ public class CodingExercise4_BarkingDog {
     // } else if (barking = true && ((hourOfDay >= 8) && (hourOfDay <= 22))) {
     //     return false;
     // }
-}
+// }
 
 //i t
 //close
