@@ -6,16 +6,31 @@ public class CodingExercise4_BarkingDog {
        shouldWakeUp(true, -1); 
     }
 
+    // public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
+        
+    //     if ((hourOfDay < 0) || (hourOfDay > 23)) {
+    //         return false;
+    //     }  if (barking = true && ((hourOfDay < 0) && (hourOfDay < 23))) { //ithink this is where  I erred. I wasn't wrong on logic the whole time just need to realize what is 0 and 1
+    //         return false;
+    //     }
+    //     return true;
+        
+    // }
+  
+//here is the correct and slimmed down version 
+
     public static boolean shouldWakeUp(boolean barking, int hourOfDay) {
         
-        if ((hourOfDay < 0) || (hourOfDay > 23)) {
-            return false;
-        }  if (barking = true && ((hourOfDay < 0) && (hourOfDay < 23))) { //ithink this is where  I erred. I wasn't wrong on logic the whole time just need to realize what is 0 and 1
-            return false;
-        }
-        return true;
-        
-    }
+        // if the hourOfDay is less than 0 or greater than 23, it's not
+         // valid, so return false
+         if (hourOfDay < 0 || hourOfDay > 23) {
+             return false;
+         }
+         // if the dog is barking, and it's before 8am or after 10pm,
+         // then you should wake up.
+         return barking && (hourOfDay < 8 || hourOfDay > 22);
+     }
+     }
     // final test i think
     // if ((hourOfDay < 0) || (hourOfDay > 23)) {
     //     return false;
