@@ -14,4 +14,11 @@ public class sec53_SecondsAndMinutesChallange {
     public static void main(String[] args) {
         
     }
+    public static String getDurationString(int seconds){
+int XX = seconds / 60;
+
+    }
+    public static String getDurationString(int minutes, int seconds){
+
+    }
 }
