@@ -12,14 +12,18 @@
 
 public class sec53_SecondsAndMinutesChallange {
     public static void main(String[] args) {
-        
-    }
-    public static String getDurationString(int seconds){
-int minutes = seconds / 60;
-return System.out.println(minutes + " minutes");
+        System.out.println(getDurationString(3945));
 
     }
-    public static String getDurationString(int minutes, int seconds){
 
+    public static String getDurationString(int seconds) {
+        int hours = seconds / 3600;
+       System.out.println("hours: " +hours);
+        return ""; 
+
+    }
+
+    public static String getDurationString(int minutes, int seconds) {
+        return "";
     }
 }
