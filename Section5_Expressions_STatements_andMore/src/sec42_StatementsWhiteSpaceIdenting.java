@@ -11,7 +11,8 @@ public class sec42_StatementsWhiteSpaceIdenting {
         // this is like saying
         System.out.println("This is" + " another" + " test");
 
-        int anotherVariable = 50; myVariable--; System.out.println("myVariable = " +myVariable);
+        // int anotherVariable = 50; 
+        myVariable--; System.out.println("myVariable = " +myVariable);
         //this is a viable alternative however putting these statements on seperate lines makes it easier to read
     
         if (myVariable == 0){
