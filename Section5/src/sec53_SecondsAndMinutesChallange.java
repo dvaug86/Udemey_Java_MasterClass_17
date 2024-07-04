@@ -13,17 +13,40 @@
 public class sec53_SecondsAndMinutesChallange {
     public static void main(String[] args) {
         System.out.println(getDurationString(3945));
+        System.out.println(getDurationString(65, 45));
 
     }
 
     public static String getDurationString(int seconds) {
-        int hours = seconds / 3600;
-       System.out.println("hours: " +hours);
-        return ""; 
 
+        // 2 step approach
+        int minutes = seconds / 60;
+        // int hours = minutes / 60;
+        // System.out.println("hours= " + hours);
+
+        // int remainingMinutes = minutes % 60;
+        // System.out.println("minutes = " + minutes);
+        // System.out.println("remaining minutes = " + remainingMinutes);
+
+        // int remainingSeconds = seconds % 60;
+        // System.out.println("remainng seconds= " + remainingSeconds);
+
+        // 1 step approach
+        // int hours1 = seconds / 3600;
+        // System.out.println("hours1: " + hours1);
+
+        // return hours + "h " + remainingMinutes + "m " + remainingSeconds + "s";
+
+        //to eliminate a lot of this code which can be considered redundant we will do the overload method.
+        return getDurationString(minutes, seconds);
     }
 
     public static String getDurationString(int minutes, int seconds) {
-        return "";
+        int hours = minutes / 60;
+        int remainingMinutes = minutes % 60;
+        int remainingSeconds = seconds % 60;
+
+
+        return hours + "h " + remainingMinutes + "m " + remainingSeconds + "s";
     }
 }
