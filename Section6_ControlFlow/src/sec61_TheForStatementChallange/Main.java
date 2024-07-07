@@ -25,17 +25,21 @@ public class Main {
         // System.out.println("17 is" + (isPrime(17) ? "" : " NOT") + " a prime number");
 
         for(int i = 1; i <10; i++){
-            int primeCounter = 1;
-            isPrime(i);
-            if(isPrime(i)==true){
-                System.out.println(i+ " is a prime number");
-                primeCounter++;
-            
+            int primeCounter=1;
+            isPrime(i); 
             if(primeCounter ==3){
                 break;
             }
-        }
-
+            
+            if(isPrime(i)==true){
+                System.out.println(i+ " is a prime number"); 
+                System.out.println("prime counter is: " + primeCounter);
+                
+                
+                
+            }
+            
+           
         }
     }
 
