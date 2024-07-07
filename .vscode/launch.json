@@ -1,0 +1,210 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise10_MinutesToYearsDays",
+            "request": "launch",
+            "mainClass": "CodingExercise10_MinutesToYearsDays",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise11_EqualityPrinter",
+            "request": "launch",
+            "mainClass": "CodingExercise11_EqualityPrinter",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise12_PlayingCat",
+            "request": "launch",
+            "mainClass": "CodingExercise12_PlayingCat",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise3_MegaBytesConverter",
+            "request": "launch",
+            "mainClass": "CodingExercise3_MegaBytesConverter",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise4_BarkingDog",
+            "request": "launch",
+            "mainClass": "CodingExercise4_BarkingDog",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise5_LeapYearCalc",
+            "request": "launch",
+            "mainClass": "CodingExercise5_LeapYearCalc",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise6_DecimalComparator",
+            "request": "launch",
+            "mainClass": "CodingExercise6_DecimalComparator",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise7_EqualSumChecker",
+            "request": "launch",
+            "mainClass": "CodingExercise7_EqualSumChecker",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise8_TeenNumberChecker",
+            "request": "launch",
+            "mainClass": "CodingExercise8_TeenNumberChecker",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CodingExercise9_AreaCalculator",
+            "request": "launch",
+            "mainClass": "CodingExercise9_AreaCalculator",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CE13_NumberInWord",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE13_NumberInWord",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "CE14_NumberOfDaysInMonth",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE14_NumberOfDaysInMonth",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec41_KeyWordsandExpressions",
+            "request": "launch",
+            "mainClass": "sec41_KeyWordsandExpressions",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec42_StatementsWhiteSpaceIdenting",
+            "request": "launch",
+            "mainClass": "sec42_StatementsWhiteSpaceIdenting",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec43_CodeBlocks_IfElse",
+            "request": "launch",
+            "mainClass": "sec43_CodeBlocks_IfElse",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec44_IfThenElseChallenge",
+            "request": "launch",
+            "mainClass": "sec44_IfThenElseChallenge",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec45_MethodsInJava",
+            "request": "launch",
+            "mainClass": "sec45_MethodsInJava",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec46_MethodChallange",
+            "request": "launch",
+            "mainClass": "sec46_MethodChallange",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec51_MethodOverloading",
+            "request": "launch",
+            "mainClass": "sec51_MethodOverloading",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec52_MethodOverloadingChallange",
+            "request": "launch",
+            "mainClass": "sec52_MethodOverloadingChallange",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "sec53_SecondsAndMinutesChallange",
+            "request": "launch",
+            "mainClass": "sec53_SecondsAndMinutesChallange",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "sec56and57_TheSwitchStatment.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "sec58_TraditionalSwitchStatment.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main(2)",
+            "request": "launch",
+            "mainClass": "sec59_SwitchExpressionChallange.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main(3)",
+            "request": "launch",
+            "mainClass": "sec60_TheForStatement.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main(4)",
+            "request": "launch",
+            "mainClass": "sec61_TheForStatementChallange.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main(5)",
+            "request": "launch",
+            "mainClass": "sec62_Sum3and5Challange.Main",
+            "projectName": "Java_40b416fc"
+        }
+    ]
+}
