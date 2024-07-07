@@ -1,4 +1,4 @@
-package sec50_TheForStatement;
+package sec60_TheForStatement;
 
 public class Main {
     public static void main(String[] args) {
