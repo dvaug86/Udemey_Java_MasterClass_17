@@ -22,25 +22,43 @@ public class Main {
         // System.out.println("0 is" + (isPrime(3) ? "" : " NOT") + " a prime number");
 
         // System.out.println("8 is" + (isPrime(8) ? "" : " NOT") + " a prime number");
-        // System.out.println("17 is" + (isPrime(17) ? "" : " NOT") + " a prime number");
+        // System.out.println("17 is" + (isPrime(17) ? "" : " NOT") + " a prime
+        // number");
 
-        for(int i = 1; i <10; i++){
-            int primeCounter=1;
-            isPrime(i); 
-            if(primeCounter ==3){
-                break;
-            }
-            
-            if(isPrime(i)==true){
-                System.out.println(i+ " is a prime number"); 
-                System.out.println("prime counter is: " + primeCounter);
-                
-                
-                
-            }
-            
-           
-        }
+        // my incorrect code but after the first line the video showed me I saw the
+        // error of my ways.
+
+        // for (int i = 1; i < 10; i++) {
+        // int primeCounter = 1;
+        // isPrime(i);
+        // if (primeCounter == 3) {
+        // break;
+        // }
+        // if (isPrime(i) == true) {
+        // System.out.println(i + " is a prime number");
+        // System.out.println("prime counter is: " + primeCounter);
+
+        // }
+
+        // correct code basic:
+        int count = 0;
+        // for (int i = 10; i <= 50; i++) {
+        //     if (isPrime(i)) {
+        //         System.out.println("number " + i + " is a prime number");
+        //         count++;
+        //         if(count == 3) {
+        //             System.out.println("Found 3 primes - exitint for loop");
+        //             break;
+        //         }
+        //     }
+        // }
+//more efficient code: 
+for (int i = 10; count < 3 && i <=50; i++){
+    if(isPrime(i)){
+        System.out.println("number " +i+ " is a prime number");
+        count++;
+    }
+}
     }
 
     public static boolean isPrime(int wholeNumber) {
@@ -49,13 +67,14 @@ public class Main {
             return (wholeNumber == 2);
         }
 
-        for (int divisor = 2; divisor <= wholeNumber /2; divisor++) { //we divide by 2 because if half the whole number can be divided by 2 then the whole number will also be divisible by 2...
+        for (int divisor = 2; divisor <= wholeNumber / 2; divisor++) { // we divide by 2 because if half the whole
+                                                                       // number can be divided by 2 then the whole
+                                                                       // number will also be divisible by 2...
             if (wholeNumber % divisor == 0) {
                 return false;
             }
         }
         return true;
-        
 
-        }
     }
+}
