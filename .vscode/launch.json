@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "sec64_WhileAndDoWhileStatements.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE15_SumOdd",
             "request": "launch",
             "mainClass": "CodingExercises.CE15_SumOdd",
