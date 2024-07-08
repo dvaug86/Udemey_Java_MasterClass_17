@@ -9,6 +9,20 @@ package sec65_whileLoopChallengeExercise;
 
 public class Main {
     public static void main(String[] args) {
-        
+       
+       //my code was incorrect here is correct code
+       int number = 4;
+       int finishNumber = 20;
+
+       while(number <= finishNumber){
+        number++; //you often want the increment first to avoid infinite loops. this is why it was set to 4
+        if(!isEvenNumber(number)){
+            continue; //remember continue skips...so here if it is not even it will continue back to the beginning and not print
+        }
+        System.out.println("even number " + number);
+       }
+    }
+    public static boolean isEvenNumber( int number){
+        return number % 2 == 0;
     }
 }

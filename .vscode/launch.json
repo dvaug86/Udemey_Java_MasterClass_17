@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "sec65_whileLoopChallengeExercise.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "sec64_WhileAndDoWhileStatements.Main",
             "projectName": "Java_40b416fc"
         },
