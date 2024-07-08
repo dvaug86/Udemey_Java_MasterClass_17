@@ -21,7 +21,7 @@ package CodingExercises;
 
 public class CE15_SumOdd {
     public static void main(String[] args) {
-
+sumOdd(1,100);
     }
 
     public static boolean isOdd(int number) {
@@ -34,9 +34,18 @@ public class CE15_SumOdd {
         return false;
     }
 
-    public static int sumOdd( int start, int end){
-        for(int i = start; i <= end; i++){
-            
+    public static int sumOdd(int start, int end) {
+        int sumOfMatches = 0;
+        if (start > end) {
+            return -1;
         }
+        for (int i = start; i <= end; i++) {
+            if (isOdd(i) == true) {
+                return sumOfMatches += i;
+            }
+            return -1;
+        }
+        System.out.println(sumOfMatches);
+        return sumOfMatches;
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE15_SumOdd",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE15_SumOdd",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
