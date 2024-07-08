@@ -19,19 +19,25 @@ If those conditions are not satisfied return -1 from the method to indicate inva
 
 package CodingExercises;
 
+//My screw up here was after so many times of trying to find even I screwed up on what should have been the 
+//easier part of the isOdd method.
+//Need to remember festina lente
+
 public class CE15_SumOdd {
     public static void main(String[] args) {
-sumOdd(-1,11);
+sumOdd(1,100);
     }
 
     public static boolean isOdd(int number) {
         if (number <= 0) {
             return false;
         }
-        if (number % 2 == 0) {
+        if (number % 2 != 0) {
             return true;
         }
-        return false;
+    return false;
+       
+    // return number > 0 && number % 2 !=0;  This is a more efficient way 
     }
 
     public static int sumOdd(int start, int end) {
@@ -40,11 +46,12 @@ sumOdd(-1,11);
         }
         int sumOfMatches = 0;
         for (int i = start; i <= end; i++) {
-            if (isOdd(i)) {
+            if (isOdd(i)==true) { //having == true is unnecessary
                 sumOfMatches += i;
             }
             
         }
+        System.out.println(sumOfMatches);
         return sumOfMatches;
     }
 }
