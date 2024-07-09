@@ -24,6 +24,9 @@ package CodingExercises;
 public class CE19_SharedDigit {
     public static void main(String[] args) {
 
+        System.out.println(" the numbers 12, and 23 is: " + hasSharedDigit(12, 23));
+        System.out.println(" the numbers 9, and 99 is: " + hasSharedDigit(9, 299));
+        System.out.println(" the numbers 15, and 55 is: " + hasSharedDigit(15, 55));
     }
 
     // need to set up a while loop with in a while loop: while num 1 is running
