@@ -53,15 +53,17 @@ System.out.println("number = 11212 therefore it is" +isPalindrome(11212));
             number = number * (-1);
         }
         int reverse = 0;
-        while (number > 0) {
-            int lastDigit = number % 10;
+        int original =number;  //i did not take into consideration that the while loop would be changing the number.
+        while (original > 0) {
             reverse = reverse*10;
+            int lastDigit =original % 10;
             reverse = reverse + lastDigit;
-            number = number / 10;
+            original = original / 10;
         }
-if(number !=reverse){
-    return false;
+        
+if(number ==reverse){
+    return true;
 }
-return true;
+return false;
     }
 }

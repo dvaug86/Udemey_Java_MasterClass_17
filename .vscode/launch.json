@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE16_NumberPalindrome",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE16_NumberPalindrome",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "sec67_WhileAndDoWhileRecap.Main",
