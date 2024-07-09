@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE18_EvenDigitSum",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE18_EvenDigitSum",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE17_FirstAndLastDigitSum",
             "request": "launch",
             "mainClass": "CodingExercises.CE17_FirstAndLastDigitSum",
