@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "sec67_WhileAndDoWhileRecap.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "sec66_DigitSumChallengeExercise.Main",
             "projectName": "Java_40b416fc"
         },
