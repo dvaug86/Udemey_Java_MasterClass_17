@@ -23,13 +23,28 @@ package CodingExercises;
 
 public class CE19_SharedDigit {
     public static void main(String[] args) {
-        
+
     }
-    public static boolean(int num1, int num2){
-        if(((num1 < 10) || (num1 >99)) || ((num2 < 10) || (num2 >99)) ){
+
+    // need to set up a while loop with in a while loop: while num 1 is running
+    // through each digit
+    // a second while loop takes each digit in num2 and compares to num 1
+
+    public static boolean hasSharedDigit(int num1, int num2) {
+        if (((num1 < 10) || (num1 > 99)) || ((num2 < 10) || (num2 > 99))) {
             return false;
-            //need to set up a while loop with in a while loop: while num 1 is running through each digit
-            //a second while loop takes each digit in num2 and compares to num 1
         }
+        while (num1 > 0) {
+            int newNum1 = num1 % 10;
+            while (num2 > 0) {
+                int newNum2 = num2 % 10;
+                if (newNum2 == newNum1) {
+                    return true;
+                }
+                num2 = num2 / 10;
+            }
+            num1 = num1 / 10;
+        }
+        return false;
     }
 }
