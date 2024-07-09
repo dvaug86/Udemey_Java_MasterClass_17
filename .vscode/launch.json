@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE17_FirstAndLastDigitSum",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE17_FirstAndLastDigitSum",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE16_NumberPalindrome",
             "request": "launch",
             "mainClass": "CodingExercises.CE16_NumberPalindrome",

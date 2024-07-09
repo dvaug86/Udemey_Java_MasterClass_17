@@ -12,13 +12,20 @@ public class CE17_FirstAndLastDigitSum {
         System.out.println("the  first and last digit sum of -10 is " + sumFirstAndLastDigit(-10));
     }
     public static int sumFirstAndLastDigit(int number){
-        int lastDigit = number /10;
-        int firstDigit = 0;
-        
-        while(number > 9){
-            firstDigit = number /10;
+        int lastDigit = number % 10;
+        int firstDigit =number;
+        if(number < 0){
+            return -1;
         }
-return  firstDigit+ lastDigit;
+       
+        
+        while(firstDigit > 9){
+            // firstDigit = firstDigit% 10;
+            firstDigit =firstDigit /10;
+            
+        }
+        System.out.println("last digit = " + lastDigit + " first digit = " +firstDigit);
+return  firstDigit + lastDigit;
         
     }
 }
