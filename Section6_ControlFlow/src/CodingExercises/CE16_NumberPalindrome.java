@@ -39,12 +39,29 @@ Tip: Be careful with reversing a number, you will need a parameter for comparing
 
  */
 
-
-
 package CodingExercises;
 
 public class CE16_NumberPalindrome {
     public static void main(String[] args) {
-        
+System.out.println("number = -1221 therefore it is" +isPalindrome(-1221));
+System.out.println("number = 707 therefore it is" +isPalindrome(707));
+System.out.println("number = 11212 therefore it is" +isPalindrome(11212));
+    }
+
+    public static boolean isPalindrome(int number) {
+        if (number < 0) {
+            number = number * (-1);
+        }
+        int reverse = 0;
+        while (number > 0) {
+            int lastDigit = number % 10;
+            reverse = reverse*10;
+            reverse = reverse + lastDigit;
+            number = number / 10;
+        }
+if(number !=reverse){
+    return false;
+}
+return true;
     }
 }
