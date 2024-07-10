@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE21_AllFactors",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE21_AllFactors",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE19_SharedDigit",
             "request": "launch",
             "mainClass": "CodingExercises.CE19_SharedDigit",
