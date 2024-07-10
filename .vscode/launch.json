@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE19_SharedDigit",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE19_SharedDigit",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE18_EvenDigitSum",
             "request": "launch",
             "mainClass": "CodingExercises.CE18_EvenDigitSum",
