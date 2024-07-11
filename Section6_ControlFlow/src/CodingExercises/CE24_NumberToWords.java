@@ -74,44 +74,129 @@ package CodingExercises;
 
 public class CE24_NumberToWords {
     public static void main(String[] args) {
-        numberToWords(35);
+        // numberToWords(400);
+        getDigitCount(400);
     }
 
-    public static int reverse(int number){
-       int reverseNumber = 0;
-       int remainder = 0;
-        while(number>0){
-           remainder = number %10;
-            reverseNumber +=remainder;
-            reverseNumber = reverseNumber*10;
-            number = number /10;
+    // public static int reverse(int number) {
+    // int reverseNumber = 0;
+    // int remainder = 0;
+    // while (number > 0) {
+    // remainder = number % 10;
+    // reverseNumber += remainder;
+    // reverseNumber = reverseNumber * 10;
+    // number = number / 10;
+    // }
+    // return reverseNumber;
+    // }
+
+    // public static int getDigitCount(int number){
+    // int count =0;
+
+    // if (number < 0) {
+    // return -1;
+    // }
+    // if (number ==0){
+    // return 1;
+    // }
+
+    // }
+
+    // public static void numberToWords(int number) {
+    // if (number < 0) {
+    // System.out.println("Invalid Value");
+    // }
+    // int indNum = number;
+    // for (int i = number; i > 0; i /= 10) {
+    // indNum = number % 10;
+    // String numberWord = switch (indNum) {
+    // case 0 -> "ZERO";
+    // case 1 -> "ONE";
+    // case 2 -> "TWO";
+    // case 3 -> "THREE";
+    // case 4 -> "FOUR";
+    // case 5 -> "FIVE";
+    // case 6 -> "SIX";
+    // case 7 -> "SEVEN";
+    // case 8 -> "EIGHT";
+    // case 9 -> "NINE";
+    // default -> "OTHER";
+
+    // }; // remember semicolon after
+    // System.out.println(numberWord);
+    // }
+
+    // I was way pretty far off on this one. I understand the answer. Instead of
+    // copying and pasting the answer I am
+    // typing it out so that I can really absorb it and adding my notes to it.
+
+    public static int reverse(int number) {
+
+        //first we need to create a reverse method. This is because if we were to dive straight in and not initially reverse the number our answer would be reversed.
+        //123 by logic would be read as three two one. This is because the logic reads the number right to left.
+        int reverse = 0;
+        while (number != 0) {
+            reverse = (reverse * 10) + (number % 10); //this adds a ones tens hundreds place etc. and adds the the remainder of the number when modulus 10 is done to it.
+            number /= 10; //moves removes the ones digit for each number so that we have something new to add to the new ones digit of the reverse.
         }
-        return reverseNumber;
+        return reverse;
+    }
+
+
+    //the digit count method is created just incase there is trailing 0s in the 
+    public static int getDigitCount(int number) {
+        if (number < 0) {
+            return -1;
+        }
+        if (number == 0) { 
+            return 1;
+        }
+        int count = 0;
+        for (int i = 1; i <= number; i *= 10) {
+            count++;
+            //this gives you a digit count.
+        }
+        return count;
     }
 
     public static void numberToWords(int number) {
         if (number < 0) {
             System.out.println("Invalid Value");
+            return;
         }
-        int indNum = number;
-        for (int i = number; i > 0; i /= 10) {
-            indNum = number % 10;
-            String numberWord = switch (indNum) {
-                case 0 -> "ZERO";
-                case 1 -> "ONE";
-                case 2 -> "TWO";
-                case 3 -> "THREE";
-                case 4 -> "FOUR";
-                case 5 -> "FIVE";
-                case 6 -> "SIX";
-                case 7 -> "SEVEN";
-                case 8 -> "EIGHT";
-                case 9 -> "NINE";
-                default -> "OTHER";
+        int reverse = reverse(number);
 
-            }; // remember semicolon after
-            System.out.println(numberWord);
+        //here we know how many digits the normal number has.  for instance 400 would give a count of 3 
+        //but the reverse of that is 004 or just 4. this would give a count of 1 which we will apply way below. 
+        int leadingZeroes = getDigitCount(number) - getDigitCount(reverse);
+
+        //we have this just in case the actual number is 0
+        if (number == 0) {
+            System.out.println("Zero");
+            return;
         }
 
+        //here we go through each ones digit and move the decimal along until we hit the leading zeros
+        while (reverse != 0) {
+            int lastDigit = reverse % 10;
+            switch (lastDigit) {
+                case 0 -> System.out.println("Zero");
+                case 1 -> System.out.println("One");
+                case 2 -> System.out.println("Two");
+                case 3 -> System.out.println("Three");
+                case 4 -> System.out.println("Four");
+                case 5 -> System.out.println("Five");
+                case 6 -> System.out.println("Six");
+                case 7 -> System.out.println("Seven");
+                case 8 -> System.out.println("Eight");
+                case 9 -> System.out.println("Nine");
+            }
+            reverse /= 10;
+        }
+//once we hit the leading zeros this is where this code block below comes in.
+        for (int i = 0; i < leadingZeroes; i++) {
+            System.out.println("Zero");
+        }
     }
+
 }
