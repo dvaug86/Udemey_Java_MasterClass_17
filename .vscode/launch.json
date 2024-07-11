@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE26_LargestPrime",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE26_LargestPrime",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE25_FlourPackProblem",
             "request": "launch",
             "mainClass": "CodingExercises.CE25_FlourPackProblem",
