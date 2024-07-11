@@ -29,11 +29,47 @@ canPack (2, 2, 11); should return true since bigCount is 2 (big bags 5 kilos eac
 canPack (-3, 2, 12); should return false since bigCount is negative.
  */
 
-
 package CodingExercises;
 
 public class CE25_FlourPackProblem {
     public static void main(String[] args) {
-        
+        System.out.println(canPack(1, 0, 4));
+        System.out.println(canPack(1, 0, 5));
+        System.out.println(canPack(10, 5, 55));
+    }
+
+    public static boolean canPack(int bigCount, int smallCount, int goal) {
+        if (bigCount < 0 || smallCount < 0 || goal < 0) {
+            return false;
+        }
+        int currentWeight = 0;
+        while (currentWeight <goal) {
+            if(bigCount==0){
+            continue;
+            }
+            if(bigCount>0){
+                currentWeight = bigCount*5;
+                if(currentWeight<goal){
+                    continue;
+                }
+                if(currentWeight > goal){
+                    return false;
+                }
+                return true;
+            }
+            
+        }
+        if (currentWeight < goal) {
+            
+        currentWeight += (smallCount);
+       
+        if (currentWeight < goal) {
+            return false;
+        }
+
+        return true;
+    }
+    return true;
     }
 }
+
