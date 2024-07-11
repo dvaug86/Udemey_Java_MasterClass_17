@@ -42,34 +42,57 @@ public class CE25_FlourPackProblem {
         if (bigCount < 0 || smallCount < 0 || goal < 0) {
             return false;
         }
-        int currentWeight = 0;
-        while (currentWeight <goal) {
-            if(bigCount==0){
-            continue;
-            }
-            if(bigCount>0){
-                currentWeight = bigCount*5;
-                if(currentWeight<goal){
-                    continue;
-                }
-                if(currentWeight > goal){
-                    return false;
-                }
+        int bigWeight = bigCount * 5;
+        int totalWeight = 0;
+        if (bigWeight == goal) {
+            return true;
+        }
+        if (bigWeight > goal) {
+            int remainder = bigWeight % 5;
+            if (remainder == 0) {
                 return true;
             }
             
         }
-        if (currentWeight < goal) {
-            
-        currentWeight += (smallCount);
-       
-        if (currentWeight < goal) {
+        if (bigWeight < goal) {
+            int smallWeight = smallCount * 1;
+            totalWeight = bigWeight + smallWeight;
+        }
+        if (totalWeight < goal) {
             return false;
         }
-
         return true;
-    }
-    return true;
     }
 }
 
+
+//My code works it just doesn't work how udemey wants it to. 
+//answer key below how they want it plus my notes;
+//take note of creating a constant. remember the use of booleans such as creating a boolean variable.
+/*
+ * public class FlourPacker {
+ 
+    private static final int BIG_WEIGHT = 5;  //we haven't gone over creating constants but this is how we do it
+ 
+    public static boolean canPack(int bigCount, int smallCount, int goal) {
+        
+        if (bigCount < 0 || smallCount < 0 || goal < 0) {
+            return false;
+        }
+ 
+        boolean result = false;
+        int totalBigWeight = bigCount * BIG_WEIGHT;
+        if (totalBigWeight >= goal) {
+            int remaining = goal % BIG_WEIGHT;
+            if (smallCount >= remaining) {
+                result = true;
+            }
+        } else {
+            if (smallCount >= goal - totalBigWeight) {
+                result = true;
+            }
+        }
+        return result;
+    }
+}
+ */
