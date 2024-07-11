@@ -70,34 +70,48 @@ HINT: Use a for loop to print zeroes after reversing the number.
 As seen in a previous example, 100 reversed becomes 1, but the method numberToWords should print "One Zero Zero". To get the number of zeroes, check the difference between the digit count from the original number and the reversed number. 
  */
 
-
 package CodingExercises;
 
 public class CE24_NumberToWords {
     public static void main(String[] args) {
-        
+        numberToWords(35);
+    }
+
+    public static int reverse(int number){
+       int reverseNumber = 0;
+       int remainder = 0;
+        while(number>0){
+           remainder = number %10;
+            reverseNumber +=remainder;
+            reverseNumber = reverseNumber*10;
+            number = number /10;
+        }
+        return reverseNumber;
     }
 
     public static void numberToWords(int number) {
-        if(number < 0){
+        if (number < 0) {
             System.out.println("Invalid Value");
         }
+        int indNum = number;
+        for (int i = number; i > 0; i /= 10) {
+            indNum = number % 10;
+            String numberWord = switch (indNum) {
+                case 0 -> "ZERO";
+                case 1 -> "ONE";
+                case 2 -> "TWO";
+                case 3 -> "THREE";
+                case 4 -> "FOUR";
+                case 5 -> "FIVE";
+                case 6 -> "SIX";
+                case 7 -> "SEVEN";
+                case 8 -> "EIGHT";
+                case 9 -> "NINE";
+                default -> "OTHER";
 
-        
-        String numberWord = switch (number) {
-            case 0 -> "ZERO";
-            case 1 -> "ONE";
-            case 2 -> "TWO";
-            case 3 -> "THREE";
-            case 4 -> "FOUR";
-            case 5 -> "FIVE";
-            case 6 -> "SIX";
-            case 7 -> "SEVEN";
-            case 8 -> "EIGHT";
-            case 9 -> "NINE";
-            default -> "OTHER";
+            }; // remember semicolon after
+            System.out.println(numberWord);
+        }
 
-        }; // remember semicolon after
-        System.out.println(numberWord);
     }
 }

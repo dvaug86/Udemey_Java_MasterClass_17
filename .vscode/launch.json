@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE24_NumberToWords",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE24_NumberToWords",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE22_GreatestCommonDivisor",
             "request": "launch",
             "mainClass": "CodingExercises.CE22_GreatestCommonDivisor",
