@@ -70,14 +70,37 @@ public class CE27_DiagonalStar {
     public static void main(String[] args) {
         printSquareStar(8);
     }
-    public static void printSquareStar(int number){
-        if(number < 5){
+
+    public static void printSquareStar(int number) {
+        if (number < 5) {
             System.out.println("Invalid Value");
         }
-        for(int i = 1; i<= number; i++){
-            for(int j = 1; j<= number; j++){
-                System.out.print("*");
+        // row count
+        for (int i = 1; i <= number; i++) {
+            if (i == 1 || i == number) {
+
+                // // column count
+                for (int j = 1; j <= number; j++) {
+                    System.out.print("*");
+                }
             }
+
+            if (i > 1 && i < number) {
+                for (int j = 1; j <= number-1; j++) {
+                    if (j == 1 || j == number-1) {
+                        System.out.print("*");
+                    }
+                    if(j == i){
+                        System.out.print("*"); 
+                    }
+                    if(j == ((i -j) +1)){
+                        System.out.print("*"); 
+                    }
+                    System.out.print(" ");
+
+                }
+            }
+            
             System.out.println();
         }
     }
