@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE27_DiagonalStar",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE27_DiagonalStar",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "CE26_LargestPrime",
             "request": "launch",
             "mainClass": "CodingExercises.CE26_LargestPrime",
