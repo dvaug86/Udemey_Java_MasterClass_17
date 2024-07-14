@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "sec71_ExceptionHandlingAndIntroToScanner.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "sec70_ParsingValuesAndREadingInput.Main",
             "projectName": "Java_40b416fc"
         },
