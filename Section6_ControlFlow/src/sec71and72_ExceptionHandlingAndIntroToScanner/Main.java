@@ -29,6 +29,7 @@ public class Main {
 
     public static String getInputFromScanner(int currentYear) {
 
+        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in); // new object of type scanner
 
         // String name = System.console().readLine("Hi, What's your Namme? ");
