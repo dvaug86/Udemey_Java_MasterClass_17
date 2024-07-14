@@ -16,6 +16,8 @@ public class Main {
         String usersDateOfBirth = "1999";
 
         int dateOfBirth = Integer.parseInt(usersDateOfBirth);
+        //Integer is a class
+        //parseInt
 
         System.out.println("Age =" + (currentYear + usersDateOfBirth)); 
         System.out.println("Age =" + (currentYear - dateOfBirth)); 
