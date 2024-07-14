@@ -15,8 +15,12 @@ public class Main {
         int currentYear = 2024;
         String usersDateOfBirth = "1999";
 
+        int dateOfBirth = Integer.parseInt(usersDateOfBirth);
+
         System.out.println("Age =" + (currentYear + usersDateOfBirth)); 
+        System.out.println("Age =" + (currentYear - dateOfBirth)); 
         //we get the same result.
+        //the int automatically becomes a string.
 
     }   
 }
