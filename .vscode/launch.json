@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "sec74_MinAndMaxChallenge.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "sec73_ReadingUserInputChallange.Main",
             "projectName": "Java_40b416fc"
         },
