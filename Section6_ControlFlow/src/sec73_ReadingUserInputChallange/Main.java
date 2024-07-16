@@ -29,7 +29,6 @@ public class Main {
         // int sum = 0;
         double sum = 0;
 
-
         while (counter <= 5) {
             System.out.println("Enter number #" + counter + ":");
             String nextNumber = scanner.nextLine();
@@ -43,29 +42,28 @@ public class Main {
             }
         }
 
-
         System.out.println("The sum of the 5 numbers = " + sum);
-
+        scanner.close();
     }
 }
 
-//in case i want to do it as a do while loop
+// in case i want to do it as a do while loop
 /*
- *         do {
-            System.out.println("Enter number #" + counter + ":");
-            String nextNumber = scanner.nextLine();
-            try {
-                // int number = Integer.parseInt(nextNumber);
-                double number = Double.parseDouble(nextNumber);
-                counter++;
-                sum += number;
-            } catch (NumberFormatException nfe) {
-                System.out.println("Invalid number");
-            }
-                while(counter <= 5);
-        }
-
-        
-        System.out.println("The sum of the 5 numbers = " + sum);
-
+ * do {
+ * System.out.println("Enter number #" + counter + ":");
+ * String nextNumber = scanner.nextLine();
+ * try {
+ * // int number = Integer.parseInt(nextNumber);
+ * double number = Double.parseDouble(nextNumber);
+ * counter++;
+ * sum += number;
+ * } catch (NumberFormatException nfe) {
+ * System.out.println("Invalid number");
+ * }
+ * while(counter <= 5);
+ * }
+ * 
+ * 
+ * System.out.println("The sum of the 5 numbers = " + sum);
+ * 
  */
