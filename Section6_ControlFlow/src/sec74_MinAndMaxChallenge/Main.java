@@ -74,5 +74,6 @@ public class Main {
         } else{
             System.out.println("no valid data entered");
         }
+        scanner.close();
     }
 }
