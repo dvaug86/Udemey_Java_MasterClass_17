@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CE28_InputCalculator",
+            "request": "launch",
+            "mainClass": "CodingExercises.CE28_InputCalculator",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "sec74_MinAndMaxChallenge.Main",

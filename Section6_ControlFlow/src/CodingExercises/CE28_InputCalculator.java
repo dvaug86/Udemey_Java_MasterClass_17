@@ -55,8 +55,39 @@ NOTE: Be mindful of users who may type an invalid input right away (see example 
 
 package CodingExercises;
 
+import java.util.Scanner;
+
 public class CE28_InputCalculator {
     public static void main(String[] args) {
-        
+
+        inputThenPrintSumAndAverage();
+    }
+    public static void inputThenPrintSumAndAverage() {
+        Scanner scanner = new Scanner(System.in);
+        int loopCount = 0;
+        int sum = 0;
+        int avg = 0;
+        int counter =0;
+
+        while(true){
+            System.out.println("In order to exit enter any character");
+            String nextEntry = scanner.nextLine();
+            try {
+                int validNumber = Integer.parseInt(nextEntry);
+                sum +=validNumber;
+                counter++;
+                avg = sum/counter;
+                loopCount++;
+            } catch (NumberFormatException nfe) {
+                break; // did not do this.
+            }
+        }
+        if (loopCount > 0) {
+            System.out.println("SUM = " +sum+ " AVG = " + avg); 
+        } else{
+            System.out.println("no valid data entered");
+        }
+
+        scanner.close();
     }
 }
