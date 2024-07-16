@@ -64,7 +64,7 @@ public class CE28_InputCalculator {
     }
     public static void inputThenPrintSumAndAverage() {
         Scanner scanner = new Scanner(System.in);
-        int loopCount = 0;
+        int loopCount = 0; //don't need this just using count would sufficed
         int sum = 0;
         int avg = 0;
         int counter =0;
@@ -91,3 +91,41 @@ public class CE28_InputCalculator {
         scanner.close();
     }
 }
+//I erred a couple times. I didn't take into consideration about the doubles and math.round they were looking for.
+//I would never have gotten the hasNextInt aspect too. However mine did work so there is that.
+
+//solution
+/*
+ * import java.util.Scanner;
+ 
+public class InputCalculator {
+ 
+    public static void inputThenPrintSumAndAverage() {
+        
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        int count = 0;
+        long avg = 0;
+ 
+        while (true) {
+            boolean hasNextInt = scanner.hasNextInt();
+            if (!hasNextInt) {
+                // break the loop on invalid input
+                break;
+            }
+            sum += scanner.nextInt();
+            count++;
+            // clear buffer e.g. remove line separator
+            scanner.nextLine();
+        }
+         
+        if (count > 0) {
+            avg = Math.round((double) sum / count);
+        }
+ 
+        System.out.println("SUM = " + sum + " AVG = " + avg);
+        scanner.close();
+    }
+}
+
+ */
