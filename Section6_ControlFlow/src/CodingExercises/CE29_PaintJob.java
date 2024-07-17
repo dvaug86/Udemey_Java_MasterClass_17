@@ -87,14 +87,33 @@ public class CE29_PaintJob {
     public static void main(String[] args) {
         
     }
-boolean isValid =true; 
+    public static int getBucketCount(double area, double areaPerBucket ){
+        if(area<= 0  || areaPerBucket <=0){
+            return -1;
+        }
+        int numBuckets = (int) Math.ceil(area/areaPerBucket);
+        return numBuckets;
+    }
+    
     public static int getBucketCount(double width, double height, double areaPerBucket ){
-
+        if(width <= 0 || height<= 0  || areaPerBucket <=0){
+            return -1;
+        }
+        double area = width* height;
+        // int numBuckets = (int) Math.ceil(area/areaPerBucket);
+        // return numBuckets;
+        int numBuckets =getBucketCount(area, areaPerBucket);
+        return numBuckets;
     }
 
     public static int getBucketCount(double width, double height, double areaPerBucket, int extraBuckets){
-        if(width < 0 || height< 0  || areaPerBucket <0){
+        if(width <= 0 || height<= 0  || areaPerBucket <=0 || extraBuckets <0){
             return -1;
         }
+        if(extraBuckets == 0){
+            getBucketCount(width, height, areaPerBucket);
+        }
+        int numBuckets = getBucketCount(width,height, areaPerBucket) - extraBuckets;
+        return numBuckets;
     }
 }
