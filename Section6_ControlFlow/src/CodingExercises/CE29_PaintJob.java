@@ -79,41 +79,75 @@ Do your best to help Bob .
 NOTE: Use the method Math.ceil to round the number of calculated buckets (double) then convert it into an int before returning the value from the methods.
  */
 
-
 package CodingExercises;
-
 
 public class CE29_PaintJob {
     public static void main(String[] args) {
-        
+
     }
-    public static int getBucketCount(double area, double areaPerBucket ){
-        if(area<= 0  || areaPerBucket <=0){
+
+    public static int getBucketCount(double area, double areaPerBucket) {
+        if (area <= 0 || areaPerBucket <= 0) {
             return -1;
         }
-        int numBuckets = (int) Math.ceil(area/areaPerBucket);
-        return numBuckets;
-    }
-    
-    public static int getBucketCount(double width, double height, double areaPerBucket ){
-        if(width <= 0 || height<= 0  || areaPerBucket <=0){
-            return -1;
-        }
-        double area = width* height;
-        // int numBuckets = (int) Math.ceil(area/areaPerBucket);
-        // return numBuckets;
-        int numBuckets =getBucketCount(area, areaPerBucket);
+        int numBuckets = (int) Math.ceil(area / areaPerBucket);
         return numBuckets;
     }
 
-    public static int getBucketCount(double width, double height, double areaPerBucket, int extraBuckets){
-        if(width <= 0 || height<= 0  || areaPerBucket <=0 || extraBuckets <0){
+    public static int getBucketCount(double width, double height, double areaPerBucket) {
+        if (width <= 0 || height <= 0 || areaPerBucket <= 0) {
             return -1;
         }
-        if(extraBuckets == 0){
+        double area = width * height;
+        int numBuckets = getBucketCount(area, areaPerBucket);
+        return numBuckets;
+    }
+
+    public static int getBucketCount(double width, double height, double areaPerBucket, int extraBuckets) {
+        if (width <= 0 || height <= 0 || areaPerBucket <= 0 || extraBuckets < 0) {
+            return -1;
+        }
+        if (extraBuckets == 0) {
             getBucketCount(width, height, areaPerBucket);
         }
-        int numBuckets = getBucketCount(width,height, areaPerBucket) - extraBuckets;
+        int numBuckets = getBucketCount(width, height, areaPerBucket) - extraBuckets;
         return numBuckets;
     }
 }
+
+// Here is the official answer key. I think my code might be better
+/*
+ * public class PaintJob {
+ 
+    public static int getBucketCount(double width, double height, double areaPerBucket, int extraBuckets) {
+        
+        if (width <= 0 || height <= 0 || areaPerBucket <= 0 || extraBuckets < 0) {
+            return -1;
+        }
+ 
+        double area = width * height;
+        double remainingArea = area - extraBuckets * areaPerBucket;
+        return getBucketCount(remainingArea, areaPerBucket);
+    }
+ 
+    public static int getBucketCount(double width, double height, double areaPerBucket) {
+        
+        if (width <= 0 || height <= 0 ||areaPerBucket <= 0 ) {
+            return -1;
+        }
+ 
+        double area = width * height;
+        return getBucketCount(area, areaPerBucket);
+    }
+ 
+    public static int getBucketCount(double area, double areaPerBucket) {
+        
+        if (area <= 0 || areaPerBucket <= 0) {
+            return -1;
+        }
+        
+        double numberOfBuckets = area / areaPerBucket;
+        return (int) Math.ceil(numberOfBuckets);
+    }
+}
+ */
