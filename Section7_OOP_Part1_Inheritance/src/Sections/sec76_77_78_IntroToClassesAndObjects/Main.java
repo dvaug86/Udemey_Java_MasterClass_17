@@ -1,4 +1,4 @@
-package Sections.sec76and77_IntroToClassesAndObjects;
+package Sections.sec76_77_78_IntroToClassesAndObjects;
 
 public class Main {
     public static void main(String[] args) {

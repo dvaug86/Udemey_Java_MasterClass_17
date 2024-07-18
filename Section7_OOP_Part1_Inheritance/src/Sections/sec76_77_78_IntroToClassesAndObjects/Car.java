@@ -1,4 +1,4 @@
-package Sections.sec76and77_IntroToClassesAndObjects;
+package Sections.sec76_77_78_IntroToClassesAndObjects;
 
 public class Car {
     private String make = "Tesla";
@@ -31,6 +31,10 @@ public class Car {
 
     public boolean isConvertible() {
         return convertible;
+    }
+
+    public void setMake(String make){
+        make = make;
     }
 
 
