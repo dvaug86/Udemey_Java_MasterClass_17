@@ -34,7 +34,27 @@ public class Car {
     }
 
     public void setMake(String make){
-        make = make;
+        this.make = make; //need to be specifc which we do so by using "this"
+    }
+
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+
+    public void setDoors(int doors) {
+        this.doors = doors;
+    }
+
+
+    public void setConvertible(boolean convertible) {
+        this.convertible = convertible;
     }
 
 

@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Sections.sec76_77_78_IntroToClassesAndObjects.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "Sections.sec76and77_IntroToClassesAndObjects.Main",
             "projectName": "Java_40b416fc"
         },
