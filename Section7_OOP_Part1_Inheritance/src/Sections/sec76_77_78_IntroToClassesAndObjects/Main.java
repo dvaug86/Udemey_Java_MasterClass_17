@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         Car car = new Car();
-        car.setMake("Porsche"); // can't use these like this because of private. have to use getter and setter
+        car.setMake("Maserati"); // can't use these like this because of private. have to use getter and setter
                                 // methods
         car.setModel("Carrera");
         car.setColor("purple");
@@ -18,5 +18,11 @@ public class Main {
 
         car.describeCar();
 
+        Car targa = new Car ();
+        targa.setMake("Porsche"); 
+        targa.setModel("Carrera");
+        targa.setDoors(2);
+        targa.setConvertible(true);
+        targa.setColor("black");
     }
 }
