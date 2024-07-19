@@ -9,54 +9,56 @@ public class Car {
     // These are fields because they are defined in the class's code block and not
     // in a method.
 
-    public String getMake(){  //can do this quick by hitting alt + insert
+    public String getMake() { // can do this quick by hitting alt + insert
         return make;
     }
-    
 
     public String getModel() {
         return model;
     }
 
-
     public String getColor() {
         return color;
     }
-
 
     public int getDoors() {
         return doors;
     }
 
-
     public boolean isConvertible() {
         return convertible;
     }
 
-    public void setMake(String make){
-        this.make = make; //need to be specifc which we do so by using "this"
-    }
+    public void setMake(String make) {
+        //this is an example of validation
+        if (make == null)
+            make = "Unkonw";
+        String lowercaseMake = make.toLowerCase();
+        switch (lowercaseMake) {
+            case "holden", "porsche", "tesla" -> this.make = make;
+            default -> {
+                this.make = "Unsupported";
+            }
 
+        }
+        // this.make = make; //need to be specifc which we do so by using "this"
+    }
 
     public void setModel(String model) {
         this.model = model;
     }
 
-
     public void setColor(String color) {
         this.color = color;
     }
-
 
     public void setDoors(int doors) {
         this.doors = doors;
     }
 
-
     public void setConvertible(boolean convertible) {
         this.convertible = convertible;
     }
-
 
     public void describeCar() {
         System.out.println(doors + "-Doors " +

@@ -7,7 +7,10 @@ public class Main {
         car.setMake("Porsche"); // can't use these like this because of private. have to use getter and setter
                                 // methods
         car.setModel("Carrera");
-        car.setColor("red");
+        car.setColor("purple");
+        car.setDoors(4);
+        car.setConvertible(true);
+
 
         // How to get indidual info:
         System.out.println("make = " + car.getMake());
