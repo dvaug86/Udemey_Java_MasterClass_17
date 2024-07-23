@@ -20,6 +20,7 @@ package Sections.sec82_ConstructorChallengeExercise;
 
 public class Main {
     public static void main(String[] args) {
-        
+        Customer joeShmoo = new Customer();
+        System.out.println("name: " + joeShmoo.getName() + " email: " + joeShmoo.getEmailAddress() + " His Credit: " + joeShmoo.getCreditLimit());
     }
 }
