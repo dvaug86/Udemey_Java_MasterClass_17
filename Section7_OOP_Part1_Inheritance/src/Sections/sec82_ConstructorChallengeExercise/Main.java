@@ -14,13 +14,30 @@
  *      -> 3. Create a constructor with just the name and email parameters, which also calls another constructor.
  */
 
-
-
 package Sections.sec82_ConstructorChallengeExercise;
 
 public class Main {
     public static void main(String[] args) {
-        Customer joeShmoo = new Customer();
-        System.out.println("name: " + joeShmoo.getName() + " email: " + joeShmoo.getEmailAddress() + " His Credit: " + joeShmoo.getCreditLimit());
+        System.out.println("customer 1");
+        Customer customer1 = new Customer("Tim", 1000, "tim@email.com");
+        System.out.println(customer1.getName());
+        System.out.println(customer1.getCreditLimit());
+        System.out.println(customer1.getEmailAddress());
+
+        System.out.println("");
+
+        System.out.println("customer 2");
+        Customer customer2 = new Customer();
+        System.out.println(customer2.getName());
+        System.out.println(customer2.getCreditLimit());
+        System.out.println(customer2.getEmailAddress());
+
+        System.out.println("");
+
+        Customer customer3 = new Customer("Joe", "joe@email.com");
+        System.out.println(customer3.getName());
+        System.out.println(customer3.getCreditLimit());
+        System.out.println(customer3.getEmailAddress());
+
     }
 }

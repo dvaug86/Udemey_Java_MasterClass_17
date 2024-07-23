@@ -2,14 +2,14 @@ package Sections.sec82_ConstructorChallengeExercise;
 
 public class Customer {
     private String name;
-    private int creditLimit;
+    private double creditLimit; // i set it as int they have it as double.
     private String emailAddress;
 
     public String getName() {
         return name;
     }
 
-    public int getCreditLimit() {
+    public double getCreditLimit() {
         return creditLimit;
     }
 
@@ -17,17 +17,17 @@ public class Customer {
         return emailAddress;
     }
 
-public Customer(String name, int creditLimit, String emailAddress){
-    this.name = name;
-    this.creditLimit = creditLimit;
-    this.emailAddress = emailAddress;
-}
+    public Customer() {
+        this("nobody", "nobody@email.com");
+    }
 
-public Customer(){
-    this("Joe", 500, "joe@email.com");
-}
+    public Customer(String name, String emailAddress) {
+        this(name, 1000, emailAddress);
+    }
 
-public Customer(String name, String emailAddress){
-    this(name, 250, emailAddress);
-}
+    public Customer(String name, double creditLimit, String emailAddress) {
+        this.name = name;
+        this.creditLimit = creditLimit;
+        this.emailAddress = emailAddress;
+    }
 }
