@@ -10,12 +10,13 @@ public class Main {
          * methodName(); only if in the same class which is why  method has calcultor. since its in a different class
          * and why we don't have main.printHello 
          */
+          //instance methods
+        Dog rex = new Dog(); //create instance
+        rex.bark(); //call instance method
+    
     }
     public static void printHello(){
         System.out.println("Hello");
-
-        //instance methods
-        Dog rex = new Dog(); //create instance
-        rex.bark(); //call instance method
-    }
+}
+        
 }
