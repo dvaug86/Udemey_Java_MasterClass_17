@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "CodeExercises.ce32_WallArea.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "Sections.sec87_POJOvsTheRecord.Main",
             "projectName": "Java_40b416fc"
         },

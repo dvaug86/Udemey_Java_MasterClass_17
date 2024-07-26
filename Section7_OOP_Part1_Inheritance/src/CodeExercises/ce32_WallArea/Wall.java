@@ -1,42 +1,38 @@
 package CodeExercises.ce32_WallArea;
 
 public class Wall {
-private double width;
-private double height;
+    private double width;
+    private double height;
 
-public Wall() {
-}
-
-public Wall(double width, double height) {
-    this.width = width;
-    this.height = height;
-    if(width < 0 ){
-        this.width = 0;
+    public Wall() {
     }
-    if(height < 0){
-        this.width = 0;
+
+    public Wall(double width, double height) {
+
+        System.out.println("area= " + getArea());
     }
-    System.out.println(getArea());
-}
 
-public double getWidth() {
-    return width;
-}
+    public void setWidth(double width) {
 
-public void setWidth(double width) {
-    this.width = width;
-}
+        this.width = width > 0 ? width : 0;
 
-public double getHeight() {
-    return height;
-}
+    }
+    public double getWidth() {
+        return width;
+    }
 
-public void setHeight(double height) {
-    this.height = height;
-}
-public double getArea(){
-    double area = width * height;
-    return area;
-}
+
+    public void setHeight(double height) {
+        this.height = height > 0 ? height : 0;
+    }
+    public double getHeight() {
+        return height;
+    }
+
+
+    public double getArea() {
+        double area = width * height;
+        return area;
+    }
 
 }
