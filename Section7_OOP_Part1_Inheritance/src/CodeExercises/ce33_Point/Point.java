@@ -27,7 +27,13 @@ public class Point {
     public void setY(int y) {
         this.y = y;
     }
-public double distance(){
-    return 
+
+public double distance() {
+    return distance(0,0);
+}
+
+public double distance(int x, int y){
+    double distanceMeasured = Math.sqrt(((x -0)^2) + ((y -0)^2)); 
+    return distanceMeasured;
 }
 }
