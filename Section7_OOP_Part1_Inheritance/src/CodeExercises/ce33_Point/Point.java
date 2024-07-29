@@ -31,9 +31,14 @@ public class Point {
 public double distance() {
     return distance(0,0);
 }
-
+public double distance(Point a) {
+    return distance(a.x, a.y);
+}
 public double distance(int x, int y){
-    double distanceMeasured = Math.sqrt(((x -0)^2) + ((y -0)^2)); 
+    int xDiff =this.x-x;
+    int yDiff = this.y -y;
+
+    double distanceMeasured = Math.sqrt((xDiff^2) + (yDiff^2)); 
     return distanceMeasured;
 }
 }
