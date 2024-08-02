@@ -7,6 +7,9 @@ public class Main {
         Animal animal = new Animal("Generic Animal", "huge", 400);
         doAnimalStuff(animal, "slow");
 
+        Dog myDog = new Dog();
+        doAnimalStuff(myDog, "fast");
+
     }
 
     public static void doAnimalStuff(Animal animal, String speed){
