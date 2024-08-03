@@ -1,12 +1,33 @@
 package Sections.sec89_InheritancePt2;
 
 public class Dog extends Animal  {
+    
+    private String earShape;
+    private String tailShape;
+    
+    
     public Dog(){
-       //This default with no set default variables
-       //super(); //this was coming up as an error because Animal didn't have a default constructor
-                   //I have since added it.
-       
-       //here i have super with new default variables
        super("mutt", "big", 50.0); //these are the arguments from animal class
     }
+
+
+    public Dog(String type,  double weight, String earShape, String tailShape) {
+        super(type, weight < 15 ? "small" : (weight < 35 ? "medium" : "large"), weight ); //size is derived from weight
+        this.earShape = earShape;
+        this.tailShape = tailShape;
+    }
+
+
+    @Override
+    //this varies from intellij. I have just modified it to be like it for now.
+    public String toString() { 
+        return "Dog {earShape=" + earShape + '\'' +
+         ", tailShape=" + tailShape + '\'' + 
+         "} " + super.toString();
+    }
+
+
+   
+    
+
    }
