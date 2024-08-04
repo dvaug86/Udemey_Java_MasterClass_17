@@ -31,7 +31,18 @@ public class Dog extends Animal  {
     }
 
 
-   
+   public void makeNoise(){
     
+   }
+
+@Override
+public void move(String speed) {
+    // TODO Auto-generated method stub
+    super.move(speed);
+    System.out.println("Dogs walk, run and wag their tail");
+}
+//code above right now exectues the move method from animal like normal, it would be like not writting it at all
+//however this gives us the option to modify it.  It allows us to extend or modify just like how the makeNoise
+//now does nothing if the dog class is invoked
 
    }
