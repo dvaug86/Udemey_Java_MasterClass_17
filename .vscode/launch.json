@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Sections.sec90_InheritancePt3.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "Sections.sec89_InheritancePt2.Main",
             "projectName": "Java_40b416fc"
         },

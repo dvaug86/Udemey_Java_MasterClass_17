@@ -2,7 +2,7 @@ package Sections.sec90_InheritancePt3;
 
 public class Animal {
 // fields
-private String type;
+protected String type; //protected modifier allowes any subclass can access this field.
 private String size;
 private double weight;
 

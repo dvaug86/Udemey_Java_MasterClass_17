@@ -30,7 +30,11 @@ public class Dog extends Animal {
     }
 
     public void makeNoise() {
-
+        if(type == "Wolf"){
+            System.out.print("Ow Wooo (howel)");
+        }
+        bark();
+        System.out.println();
     }
 
     @Override
@@ -38,10 +42,10 @@ public class Dog extends Animal {
         // TODO Auto-generated method stub
         super.move(speed);
         // System.out.println("Dogs walk, run and wag their tail");
-        if (speed == "slow"){
+        if (speed == "slow") {
             walk();
             wagTail();
-        } else{
+        } else {
             run();
             bark();
         }
@@ -51,18 +55,18 @@ public class Dog extends Animal {
     // we are making this method private because it is being called by the move
     // method above only. Not from animal
     private void bark() {
-        System.out.println("Woof! ");
+        System.out.print("Woof! ");
     }
 
     private void run() {
-        System.out.println("Dog Running ");
+        System.out.print("Dog Running ");
     }
 
     private void walk() {
-        System.out.println("Dog Walking ");
+        System.out.print("Dog Walking ");
     }
 
     private void wagTail() {
-        System.out.println("Tail Wagging ");
+        System.out.print("Tail Wagging ");
     }
 }
