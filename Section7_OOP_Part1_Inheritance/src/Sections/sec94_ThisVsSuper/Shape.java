@@ -1,7 +1,9 @@
 package Sections.sec94_ThisVsSuper;
 
 public class Shape {
+@SuppressWarnings("unused")
 private int x;
+@SuppressWarnings("unused")
 private int y;
 
 public Shape(int x, int y){
@@ -10,7 +12,9 @@ public Shape(int x, int y){
 }
 }
 class Rectangle extends Shape{
+    @SuppressWarnings("unused")
     private int width;
+    @SuppressWarnings("unused")
     private int height;
 
     //1st constructor
