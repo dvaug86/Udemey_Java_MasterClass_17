@@ -1,4 +1,4 @@
-package Sections.sec97_StringFormatting;
+package Sections.sec97_StringMethodsPt1;
 
 public class Main {
     public static void main(String[] args) {
