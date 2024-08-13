@@ -2,24 +2,21 @@ package CodeExercises.ce36_Cylinder;
 
 public class Circle {
 
-    //fields
+    // fields
     private double radius;
 
-    //constructor
+    // constructor
     public Circle(double radius) {
         this.radius = radius > 0 ? radius : 0;
     }
 
-    //methods
-    public double getRadius(){
+    // methods
+    public double getRadius() {
         return radius;
     }
 
-    public double getArea(){
+    public double getArea() {
         return (radius * radius * Math.PI);
     }
-
-
-    
 
 }

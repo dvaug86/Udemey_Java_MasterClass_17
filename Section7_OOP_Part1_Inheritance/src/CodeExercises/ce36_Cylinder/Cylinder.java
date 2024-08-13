@@ -10,13 +10,14 @@ public class Cylinder extends Circle {
         super(radius);
         this.height = height > 0 ? height : 0;
     }
-    
-    //methods
-    public double getHeight(){
+
+    // methods
+    public double getHeight() {
         return height;
     }
-    public double getVolume(){
-        return getArea()*height;
+
+    public double getVolume() {
+        return getArea() * height;
     }
 
 }
