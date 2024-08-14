@@ -1,4 +1,4 @@
-package Sections.sec101_CompositionPt1;
+package Sections.sec101and102_CompositionPt1and2;
 
 public class Product {
 
