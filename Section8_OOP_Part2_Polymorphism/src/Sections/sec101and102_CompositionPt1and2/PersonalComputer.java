@@ -20,17 +20,29 @@ public class PersonalComputer extends Product {
     // methods
         // getters
 
-    public ComputerCase getComputerCase() {
-        return computerCase;
-    }
+private void drawLogo(){
+    monitor.drawPixelAt(1200, 50, "yellow");
+}
 
-    public Motherboard getMotherboard() {
-        return motherboard;
-    }
+public void powerUp(){
+    computerCase.pressPowerButton();
+    drawLogo();
+}
+//we are commenting out the getters to prevent the calling program to access those objects
+//the part below directly
+//this is so not just anybody can access the Monitor Motherboard or computer case directly.
 
-    public Monitor getMonitor() {
-        return monitor;
-    }
+    // public ComputerCase getComputerCase() {
+    //     return computerCase;
+    // }
+
+    // public Motherboard getMotherboard() {
+    //     return motherboard;
+    // }
+
+    // public Monitor getMonitor() {
+    //     return monitor;
+    // }
 
     
 }

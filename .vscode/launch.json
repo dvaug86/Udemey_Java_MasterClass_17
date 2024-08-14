@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Sections.sec101and102_CompositionPt1and2.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "CodeExercises.ce37_PoolArea.Main",
             "projectName": "Java_40b416fc"
         },
