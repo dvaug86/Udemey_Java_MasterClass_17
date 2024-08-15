@@ -4,6 +4,7 @@ public class PersonalComputer extends Product {
 
     // here we will build the computer using composition
     private ComputerCase computerCase;
+    @SuppressWarnings("unused")
     private Motherboard motherboard;
     private Monitor monitor;
 

@@ -3,11 +3,13 @@ package Sections.sec101and102_CompositionPt1and2;
 public class Product {
 
     // fields
+    @SuppressWarnings("unused")
     private String model;
+    @SuppressWarnings("unused")
     private String manufacturer;
-    private int width;
-    private int height;
-    private int depth;
+    // private int width;
+    // private int height;
+    // private int depth;
 
     // constructor
     public Product(String model, String manufacturer) {
@@ -18,7 +20,9 @@ public class Product {
 
 class Monitor extends Product {
     // fields
+    @SuppressWarnings("unused")
     private int size;
+    @SuppressWarnings("unused")
     private String resolution;
 
     // constructor(s)
@@ -41,6 +45,7 @@ class Monitor extends Product {
 
 class Motherboard extends Product {
     // fields
+    @SuppressWarnings("unused")
     private int ramSlots;
     private int cardSlots;
     private String bios;
@@ -66,6 +71,7 @@ class Motherboard extends Product {
 
 class ComputerCase extends Product {
     // fields
+    @SuppressWarnings("unused")
     private String powerSupply;
 
     // constructor(s)
