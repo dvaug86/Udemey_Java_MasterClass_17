@@ -47,7 +47,9 @@ class Motherboard extends Product {
     // fields
     @SuppressWarnings("unused")
     private int ramSlots;
+    @SuppressWarnings("unused")
     private int cardSlots;
+    @SuppressWarnings("unused")
     private String bios;
 
     // constructor(s)
