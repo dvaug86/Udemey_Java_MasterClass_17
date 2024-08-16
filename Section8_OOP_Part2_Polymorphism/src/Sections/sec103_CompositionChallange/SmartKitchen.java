@@ -1,56 +1,89 @@
 package Sections.sec103_CompositionChallange;
 
 public class SmartKitchen {
+
     private CoffeeMaker brewMaster;
     private Refrigerator iceBox;
     private DishWasher dishWasher;
+
+    public SmartKitchen() {
+        brewMaster = new CoffeeMaker();
+        iceBox = new Refrigerator();
+        dishWasher = new DishWasher();
+    }
+
+    public CoffeeMaker getBrewMaster() {
+        return brewMaster;
+    }
+
+    public Refrigerator getIceBox() {
+        return iceBox;
+    }
+
+    public DishWasher getDishWasher() {
+        return dishWasher;
+    }
+
+    public void setKitchenState(boolean coffeeFlag, boolean fridgeFlag, boolean dishWasherFlag) {
+        brewMaster.setHasWorkToDo(coffeeFlag);
+        iceBox.setHasWorkToDo(fridgeFlag);
+        dishWasher.setHasWorkToDo(dishWasherFlag);
+    }
+
+    public void doKitchenWork() {
+        brewMaster.brewCoffee();
+        iceBox.orderFood();
+        dishWasher.doDishes();
+    }
 }
 
 class CoffeeMaker {
-    // fields
-    private boolean hasWorkTodDo;
 
-    public void setHasWorkTodDo(boolean hasWorkTodDo) {
-        this.hasWorkTodDo = hasWorkTodDo;
+    private boolean hasWorkToDo;
+
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
     }
 
     public void brewCoffee() {
-        if (hasWorkTodDo) {
+
+        if (hasWorkToDo) {
             System.out.println("Brewing Coffee");
-            hasWorkTodDo = false;
+            hasWorkToDo = false;
         }
     }
+}
 
-    class Refrigerator {
-        // fields
-        private boolean hasWorkTodDo;
+class Refrigerator {
 
-        public void setHasWorkTodDo(boolean hasWorkTodDo) {
-            this.hasWorkTodDo = hasWorkTodDo;
-        }
+    private boolean hasWorkToDo;
 
-        public void orderFood() {
-            if (hasWorkTodDo) {
-                System.out.println("Ordering Food");
-                hasWorkTodDo = false;
-            }
-        }
-
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
     }
 
-    class DishWasher {
-        // fields
-        private boolean hasWorkTodDo;
+    public void orderFood() {
 
-        public void setHasWorkTodDo(boolean hasWorkTodDo) {
-            this.hasWorkTodDo = hasWorkTodDo;
+        if (hasWorkToDo) {
+            System.out.println("Ordering Food");
+            hasWorkToDo = false;
         }
+    }
+}
 
-        public void doDishes() {
-            if (hasWorkTodDo) {
-                System.out.println("Washing Dishes");
-                hasWorkTodDo = false;
-            }
+class DishWasher {
+
+    private boolean hasWorkToDo;
+
+    public void setHasWorkToDo(boolean hasWorkToDo) {
+        this.hasWorkToDo = hasWorkToDo;
+    }
+
+    public void doDishes() {
+
+        if (hasWorkToDo) {
+            System.out.println("Washing Dishes");
+            hasWorkToDo = false;
         }
     }
 }
