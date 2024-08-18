@@ -21,15 +21,15 @@ public void turnOn(){
     System.out.println("lamp is being turned on");
 }
 
-public String getStyle(String style){
+public String getStyle() {
     return style;
 }
 
-public boolean isBattery(boolean battery){
+public boolean isBattery() {
     return battery;
 }
 
-public int globRating(int globRating){
+public int getGlobRating() {
     return globRating;
 }
 
