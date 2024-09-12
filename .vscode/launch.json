@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "OtherYoutube.AJ_32_Composition.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "OtherYoutube.AJ_31_Inheritance.Main",
             "projectName": "Java_40b416fc"
         },

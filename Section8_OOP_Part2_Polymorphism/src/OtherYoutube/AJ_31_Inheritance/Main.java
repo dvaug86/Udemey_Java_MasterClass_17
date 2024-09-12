@@ -8,5 +8,6 @@ public class Main {
 
         myDog.speak();
         myCat.speak();
+        System.out.println();
     }
 }
