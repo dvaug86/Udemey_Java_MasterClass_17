@@ -26,7 +26,7 @@ public class Lamp {
 
     // other methods
     public void turnOn() {
-        System.out.println("Lamp is being turned on");
+        System.out.print("Lamp -> Turning on");
     }
 
     public boolean isBattery() {
