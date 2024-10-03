@@ -9,6 +9,7 @@ public class Lamp {
 
     // constructor
     public Lamp(String style, boolean battery, int globRating) {
+        super();//not sure if this is really necessary
         this.style = style;
         this.battery = battery;
         this.globRating = globRating;
