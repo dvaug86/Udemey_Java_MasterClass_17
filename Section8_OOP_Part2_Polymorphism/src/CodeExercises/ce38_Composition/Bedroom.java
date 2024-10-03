@@ -15,8 +15,7 @@ public class BedRoom {
     private Lamp lamp;
 
  
-
-    // constructors
+ // constructors
     public BedRoom(String name, Wall wall1, Wall wall2, Wall wall3, Wall wall4, Ceiling ceiling, Bed bed, Lamp lamp) {
         this.name = name;
         this.wall1 = wall1;
@@ -29,7 +28,7 @@ public class BedRoom {
     }
 
     public Lamp getLamp() {
-        return lamp;
+        return this.lamp; //i originally had return lamp. it needs to be this.lamp because it is this lamp .
     }
 
     public void makeBed() {

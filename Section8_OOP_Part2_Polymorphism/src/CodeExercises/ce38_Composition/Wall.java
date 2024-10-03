@@ -2,17 +2,23 @@ package CodeExercises.ce38_Composition;
 
 public class Wall {
 
-    // fields
+    //fields 
     private String direction;
 
-    // constructors
+    //constructors
     public Wall(String direction) {
         this.direction = direction;
     }
+//this is not necessary here 
+    // public void setDirection(String direction) {
+    //     this.direction = direction;
+    // }
 
-    // methods getters
+    //methods getters
     public String getDirection() {
         return direction;
     }
 
+
+    
 }
