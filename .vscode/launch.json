@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Sections.sec104_EncapsulationPt1.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "OtherYoutube.ce38_compostionFollow_Kaila.Main",
             "projectName": "Java_40b416fc"
         },
