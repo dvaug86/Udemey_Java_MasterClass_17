@@ -1,3 +1,5 @@
+**** This is exactly like the previous challange however I am going to work through it again without looking back. ****
+
 Encapsulation
 Directions:
 
@@ -41,3 +43,51 @@ Remember to only paste the code from Printer class into the exercise evaluator. 
 You can include a message in the printPages method which informs the user that the printer is printing in duplex mode if duplex is equal to "true" if you want.
 
 When calculating pagesToPrint if duplex is equal to "true" remember that there are two operators which can help you with this. The division "/" operator divides a number and returns only the quotient without any remainder. And the modulo "%" operator divides the number and returns only the remainder, whether 0 or otherwise.
+
+
+//solution
+
+public class Printer {
+    
+    private int tonerLevel;
+    private int pagesPrinted;
+    private boolean duplex;
+ 
+    public Printer(int tonerLevel, boolean duplex) {
+        if (tonerLevel > -1 && tonerLevel <= 100) {
+            this.tonerLevel = tonerLevel;
+        } else {
+            this.tonerLevel = -1;
+        }
+        this.duplex = duplex;
+        this.pagesPrinted = 0;
+    }
+ 
+    public int addToner(int tonerAmount) {
+        
+        if (tonerAmount > 0 && tonerAmount <= 100) {
+            if (this.tonerLevel + tonerAmount > 100) {
+                return -1;
+            }
+            this.tonerLevel += tonerAmount;
+            return this.tonerLevel;
+        } else {
+            return -1;
+        }
+    }
+ 
+    public int printPages(int pages) {
+        
+        int pagesToPrint = pages;
+        if (this.duplex) {
+            pagesToPrint = (pages / 2) + (pages % 2);
+            System.out.println("Printing in duplex mode");
+        }
+        this.pagesPrinted += pagesToPrint;
+        return pagesToPrint;
+    }
+ 
+    public int getPagesPrinted() {
+        return pagesPrinted;
+    }
+}

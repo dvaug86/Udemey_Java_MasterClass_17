@@ -35,7 +35,7 @@ public class Printer {
         // toner.
 
         int tempAmount = tonerAmount + tonerLevel;
-        if (tempAmount > 0 || tempAmount < 0) {
+        if (tempAmount < 0 || tempAmount > 100) {
             return -1;
         }
         return tonerLevel += tonerAmount;
