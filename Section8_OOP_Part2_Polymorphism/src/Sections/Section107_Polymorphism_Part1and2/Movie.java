@@ -14,8 +14,12 @@ public class Movie {
         String instanceType = this.getClass().getSimpleName();
         System.out.println(title + " is a " + instanceType + " film");
     }
-    public static Movie getMovie(String type, String title){
-        return switch (type.toUpperCase().charAt(0)){
+//This is a factory method which gives us a way to obtain an object without having to know the details of how to create it.
+    public static Movie getMovie(String type, String title) {
+        return switch (type.toUpperCase().charAt(0)) {
+            case 'A' -> new Adventure(title);
+            case 'C' -> new Comedy(title);
+            case 'S' -> new ScienceFiction(title);
             default -> new Movie(title);
         };
     }
@@ -39,8 +43,9 @@ class Adventure extends Movie {
     }
 
 }
+
 class Comedy extends Movie {
-    
+
     // constructor
     public Comedy(String title) {
         super(title);
@@ -58,8 +63,9 @@ class Comedy extends Movie {
     }
 
 }
+
 class ScienceFiction extends Movie {
-    
+
     // constructor
     public ScienceFiction(String title) {
         super(title);
