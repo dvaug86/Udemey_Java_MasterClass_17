@@ -6,7 +6,7 @@ public class Main {
         // Movie theMovie = new Movie("Star Wars");
         // theMovie.watchMovie();
     
-        Movie theMovie = new Adventure("Star Wars"); //not instead of new Movie it is new Adventure
-        theMovie.watchMovie();
+        // Movie theMovie = new Adventure("Star Wars"); //not instead of new Movie it is new Adventure
+        // theMovie.watchMovie();
     }
 }
