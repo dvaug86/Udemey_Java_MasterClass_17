@@ -1,4 +1,4 @@
-package Sections.Section107_Polymorphism_Part1;
+package Sections.Section107_Polymorphism_Part1and2;
 
 public class Movie {
 
@@ -13,6 +13,11 @@ public class Movie {
     public void watchMovie() {
         String instanceType = this.getClass().getSimpleName();
         System.out.println(title + " is a " + instanceType + " film");
+    }
+    public static Movie getMovie(String type, String title){
+        return switch (type.toUpperCase().charAt(0)){
+            default -> new Movie(title);
+        };
     }
 }
 
