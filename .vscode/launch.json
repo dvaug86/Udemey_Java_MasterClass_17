@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "Sections.Section107_Polymorphism_Part1.Main",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "CodeExercises.ce39_Encapsulation.Main",
             "projectName": "Java_40b416fc"
         },
