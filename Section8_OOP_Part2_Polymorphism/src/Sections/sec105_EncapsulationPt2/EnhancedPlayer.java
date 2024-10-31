@@ -3,7 +3,7 @@ package Sections.sec105_EncapsulationPt2;
 public class EnhancedPlayer {
 
     // fields
-    // instead of refactoring use rename symbol.
+    // instead of refactoring use rename symbol. ********************************
     private String fullName;
     private int healthPercentage;
     private String weapon;
