@@ -7,6 +7,9 @@ public class SmartKitchen {
     private Refrigerator iceBox;
     private DishWasher dishWasher;
 
+
+    //this is a no-arguments constructor
+    //this means any code creating a smart kitchen won't also have to create the appliances
     public SmartKitchen() {
         brewMaster = new CoffeeMaker();
         iceBox = new Refrigerator();
@@ -25,6 +28,8 @@ public class SmartKitchen {
         return dishWasher;
     }
 
+
+    //using the suffix flag indicates a boolean state.
     public void setKitchenState(boolean coffeeFlag, boolean fridgeFlag, boolean dishWasherFlag) {
         brewMaster.setHasWorkToDo(coffeeFlag);
         iceBox.setHasWorkToDo(fridgeFlag);

@@ -2,7 +2,7 @@ package Sections.sec103_CompositionChallange;
 
 public class Main {
     public static void main(String[] args) {
-       
+
         SmartKitchen kitchen = new SmartKitchen();
 
         // kitchen.getDishWasher().setHasWorkToDo(true);
@@ -15,5 +15,5 @@ public class Main {
 
         kitchen.setKitchenState(true, false, true);
         kitchen.doKitchenWork();
-}
+    }
 }
