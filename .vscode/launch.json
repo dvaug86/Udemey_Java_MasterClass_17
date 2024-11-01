@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NextMain",
+            "request": "launch",
+            "mainClass": "Sections.sec110_TestingRuntimeTypes.NextMain",
+            "projectName": "Java_40b416fc"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Sections.Section107_Polymorphism_Part1and2.Main",
