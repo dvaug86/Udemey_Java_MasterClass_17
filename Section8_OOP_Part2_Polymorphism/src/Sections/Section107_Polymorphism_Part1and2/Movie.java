@@ -16,6 +16,15 @@ public class Movie {
         System.out.println(title + " is a " + instanceType + " film");
     }
     // .getclass() is a java.lang.object and it returns class type info
+
+    public static Movie getMovie(String type, String title) {
+        return switch (type.toUpperCase().charAt(0)) {
+            case 'A' -> new Adventure(title);
+            case 'C' -> new Comedy(title);
+            case 'S' -> new ScienceFiction(title);
+            default -> new Movie(title);
+        };
+    }
 }
 
 class Adventure extends Movie {
