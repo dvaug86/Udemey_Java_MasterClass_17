@@ -1,4 +1,4 @@
-package Sections.Section109_Polymorphism_Casting;
+package Sections.sec109_Polymorphism_Casting;
 
 import java.util.Scanner;
 

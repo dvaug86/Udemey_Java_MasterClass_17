@@ -1,4 +1,4 @@
-package Sections.Section109_Polymorphism_Casting;
+package Sections.sec109_Polymorphism_Casting;
 
 public class Movie {
 
@@ -78,7 +78,6 @@ class ScienceFiction extends Movie {
 
     @Override
     public void watchMovie() {
-        // TODO Auto-generated method stub
         super.watchMovie();
         System.out.printf("..%s%n".repeat(3),
                 "Bad Aliens do Bad Stuff",
